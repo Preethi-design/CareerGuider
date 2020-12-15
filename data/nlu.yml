@@ -125,8 +125,6 @@ nlu:
   examples: |
     - ask question
     - start question
-
-
 - intent: pcmbtn
   examples: |
     - physics chem maths
@@ -158,14 +156,16 @@ nlu:
   examples: |
     - math
     - maths
-- intent: computer
+- intent: computer_course
   examples: |
     - computer science
     - cse group
-- intent: computer1
-  examples: |
     - computer
+    
+- intent: computer
+  examples: |
     - cse
+    - computer project
 - intent: language
   examples: |
     - language
@@ -175,7 +175,6 @@ nlu:
     - lan1
     - language1
     - 1 star
-
 - intent: lan2
   examples: |
     - lan2
@@ -191,6 +190,7 @@ nlu:
     - lan4
     - language4
     - 4 star
+    - /lan4
 - intent: lan5
   examples: |
     - lan5
@@ -334,7 +334,6 @@ nlu:
     - easy
     - writting easy
     - esay writing
-
 - intent: sciexhibition
   examples: |
     - science exhibition

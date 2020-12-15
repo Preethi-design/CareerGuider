@@ -65,7 +65,7 @@ stories:
   - action: utter_pathquestion
   - intent: pcmbtn
   - action: utter_pcmcl
-  - intent: computer
+  - intent: computer_course
   - action: utter_lang
   - intent: lan4
   - action: utter_computer
@@ -78,11 +78,22 @@ stories:
   - intent: bio4
   - action: utter_maths
   - intent: math4
+  - action: utter_project_question
+  - intent: computer
+  - action: utter_extracurricular
+  - intent: sciexhibition
+  - action: utter_talentxam
+  - intent: olympiad
+  - action: utter_future_question
+  - intent: futurequestion1
+  - action: utter_willing_question
+  - intent: w3
+  - action: utter_profpath1
 - story: for check
   steps:
   - intent: math4
   - action: utter_project_question
-  - intent: computer1
+  - intent: computer
   - action: utter_extracurricular
   - intent: sciexhibition
   - action: utter_talentxam

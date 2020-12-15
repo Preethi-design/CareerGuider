@@ -22,8 +22,8 @@ intents:
 - physics
 - chemistry
 - maths
+- computer_course
 - computer
-- computer1
 - language
 - lan1
 - lan2
@@ -69,6 +69,7 @@ intents:
 - w2
 - w3
 - w4
+- nte
 entities:
 - name
 - number
@@ -119,7 +120,7 @@ responses:
       title: Chemistry
     - payload: /maths
       title: Maths
-    - payload: /computer
+    - payload: /computer_course
       title: Computer
     - payload: /language
       title: language
@@ -233,7 +234,9 @@ responses:
       title: No
     text: Cleared any of the talent examinations?
   utter_future_question:
-  - text: Imagine you are at your 25th Birthday party. You met your old school buddy John. Tell him what you do? eg I’m a Mathematician working at blabla. I did my Master at buhbuh. 
+  - text: Imagine you are at your 25th Birthday party. You met your old school buddy
+      John. Tell him what you do? eg I’m a Mathematician working at blabla. I did
+      my Master at buhbuh.
   utter_willing_question:
   - buttons:
     - payload: /w1
@@ -244,6 +247,8 @@ responses:
       title: Will act, as this is an opportunity.
     - payload: /w4
       title: will run away from the place, where I can’t see his place
-    text: Friend of yours is conducting a drama at school. The boy who needs to act as a Vegetable seller Was absent on the event day. Your friend is pleading to act for the role. Will you?
+    text: Friend of yours is conducting a drama at school. The boy who needs to act
+      as a Vegetable seller Was absent on the event day. Your friend is pleading to
+      act for the role. Will you?
   utter_profpath1:
-  - text: "you first preference is engineering  your second preference is medical"
+  - text: you first preference is engineering  your second preference is medical

@@ -1,15 +1,74 @@
 version: "2.0"
 stories:
-- story: Story from Conversation ID 86250560ebf945d398b84c976d79866e
-  steps:
-  - intent: ok_questions
-  - action: utter_pathquestion
-  - intent: pcmbtn
-  - action: utter_pcmcl
-  - intent: physics
-  - action: utter_subject
-  - action: utter_lang
-  - intent: lan1
+# - story: Story from Conversation ID 86250560ebf945d398b84c976d79866e
+#   steps:
+#   - intent: ok_questions
+#   - action: utter_pathquestion
+#   - intent: pcmbtn
+#   - action: utter_pcmcl
+#   - intent: physics
+#   - action: utter_subject
+#   - action: utter_lang
+#   - intent: lan1
+# - story: Story from Conversation ID 5c22083008cd4ce4ac512cd5cf64693c
+#   steps:
+#   - action: utter_pathquestion
+#   - intent: ask_question
+#   - intent: comp4
+#   - intent: computer1
+#   - action: utter_extracurricular
+#   - intent: sciexhibition
+#   - action: utter_talentxam
+#   - intent: olympiad
+#   - action: utter_future_question
+#   - intent: futurequestion1
+#   - action: utter_willing_question
+#   - intent: w3
+#   - action: utter_profpath1
+# - story: Story from Conversation ID a7953fbeeaef42ccac1cf1a294e00cf7
+#   steps:
+#   - action: utter_pathquestion
+#   - intent: ask_question
+#   - intent: computer1
+#   - action: utter_extracurricular
+#   - intent: sciexhibition
+#   - action: utter_talentxam
+#   - intent: olympiad
+#   - action: utter_future_question
+#   - intent: futurequestion1
+#   - action: utter_willing_question
+#   - intent: w3
+#   - action: utter_profpath1
+# - story: Story from Conversation ID 062670d06d764301b486ac673cbbb680
+#   steps:
+#   - intent: ask_question
+#   - action: utter_pathquestion
+#   - intent: pcmbtn
+#   - action: utter_pcmcl
+#   - intent: computer
+#   - action: utter_lang
+#   - intent: lan4
+#   - action: utter_computer
+#   - intent: comp4
+#   - action: utter_physics
+#   - intent: phy4
+#   - action: utter_chemistry
+#   - intent: chem4
+#   - action: utter_biology
+#   - intent: bio4
+#   - action: utter_maths
+#   - intent: math4
+#   - action: utter_project_question
+#   - intent: computer1
+#   - action: utter_extracurricular
+#   - intent: sciexhibition
+#   - action: utter_talentxam
+#   - intent: olympiad
+#   - action: utter_future_question
+#   - intent: futurequestion1
+#   - action: utter_willing_question
+#   - intent: w3
+#   - action: utter_profpath1
 rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:
