@@ -1,0 +1,379 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - What others call you?
+    - what should i call you?
+- intent: my_name
+  examples: |
+    - my name is [preethi](name)
+    - [preethi](name) is my name
+    - [preethi](name) this side
+    - people call me [preethi](name)
+- intent: mobile_number
+  examples: |
+    - my number is [123456789](number)
+    - [123456789](number)
+    - [123456789](number) is my number
+    - my mobile number is [123456789](number)
+- intent: user_edu_qual
+  examples: |
+    - I have completed 12th standard right now.
+    - 12th grade completed.
+    - 12th completed.
+    - completed my schooling.
+- intent: state_of_student
+  examples: |
+    - No, I am still in confusion to choose my career, can you help me out.
+    - no i haven't choosen
+    - no
+    - not yet
+    - confusion
+- intent: ok_questions
+  examples: |
+    - ok Start asking the questions
+    - ok start
+    - proceed
+    - start
+    - ok
+- intent: ask_question
+  examples: |
+    - ask question
+    - start question
+
+
+- intent: pcmbtn
+  examples: |
+    - physics chem maths
+    - pcm
+- intent: lifesciencebtn
+  examples: |
+    - life science
+    - life oriented
+    - living
+- intent: artsbtn
+  examples: |
+    - fashion
+    - arts and science
+    - arts group
+- intent: history
+  examples: |
+    - history
+    - History
+    - His
+- intent: physics
+  examples: |
+    - physics
+    - phy
+- intent: chemistry
+  examples: |
+    - chem
+    - chemistry
+- intent: maths
+  examples: |
+    - math
+    - maths
+- intent: computer
+  examples: |
+    - computer science
+    - cse group
+- intent: computer1
+  examples: |
+    - computer
+    - cse
+- intent: language
+  examples: |
+    - language
+    - lan
+- intent: lan1
+  examples: |
+    - lan1
+    - language1
+    - 1 star
+
+- intent: lan2
+  examples: |
+    - lan2
+    - language2
+    - 2 star
+- intent: lan3
+  examples: |
+    - lan3
+    - language3
+    - 3 star
+- intent: lan4
+  examples: |
+    - lan4
+    - language4
+    - 4 star
+- intent: lan5
+  examples: |
+    - lan5
+    - language5
+    - 5 star
+- intent: comp1
+  examples: |
+    - comp1
+    - computer1
+    - 1 star
+- intent: comp2
+  examples: |
+    - comp2
+    - computer2
+    - 2 star
+- intent: comp3
+  examples: |
+    - comp3
+    - computer3
+    - 3 star
+- intent: comp4
+  examples: |
+    - comp4
+    - computer4
+    - 4 star
+- intent: comp5
+  examples: |
+    - comp5
+    - computer5
+    - 5 star
+- intent: phy
+  examples: |
+    - phy1
+    - physics1
+    - 1 star
+- intent: phy2
+  examples: |
+    - phy2
+    - physics2
+    - 2 star
+- intent: phy3
+  examples: |
+    - phy3
+    - physics3
+    - 3 star
+- intent: phy4
+  examples: |
+    - phy4
+    - physics4
+    - 4 star
+- intent: phy5
+  examples: |
+    - phy5
+    - physics5
+    - 5 star
+- intent: chem1
+  examples: |
+    - chem1
+    - chemistry1
+    - 1 star
+- intent: chem2
+  examples: |
+    - chem2
+    - chemistry2
+    - 2 star
+- intent: chem3
+  examples: |
+    - chem3
+    - chemistry3
+    - 3 star
+- intent: chem4
+  examples: |
+    - chem4
+    - chemistry4
+    - 4 star
+- intent: chem5
+  examples: |
+    - chem5
+    - chemistry5
+    - 5 star
+- intent: bio1
+  examples: |
+    - bio1
+    - biology1
+    - 1 star
+- intent: bio2
+  examples: |
+    - bio2
+    - biology2
+    - 2 star
+- intent: bio3
+  examples: |
+    - bio3
+    - biology3
+    - 3 star
+- intent: bio4
+  examples: |
+    - bio4
+    - biology4
+    - 4 star
+- intent: bio5
+  examples: |
+    - bio5
+    - biology5
+    - 5 star
+- intent: math1
+  examples: |
+    - math1
+    - maths1
+    - 1 star
+- intent: math2
+  examples: |
+    - math2
+    - maths2
+    - 2 star
+- intent: math3
+  examples: |
+    - math3
+    - maths3
+    - 3 star
+- intent: math4
+  examples: |
+    - math4
+    - maths4
+    - 4 star
+- intent: math5
+  examples: |
+    - math5
+    - maths5
+    - 5 star
+- intent: sport
+  examples: |
+    - sport
+    - sports
+- intent: oratory
+  examples: |
+    - oratory
+    - speech
+- intent: easy
+  examples: |
+    - easy
+    - writting easy
+    - esay writing
+
+- intent: sciexhibition
+  examples: |
+    - science exhibition
+    - Science Exhibition
+    - sciexhibition
+- intent: no
+  examples: |
+    - no
+    - not
+- intent: others
+  examples: |
+    - others
+    - other
+- intent: futurequestion1
+  examples: |
+    - computer engineer
+    - software engineer
+    - hardware engineer
+- intent: olympiad
+  examples: |
+    - olympiad
+    - oly
+- intent: nte
+  examples: |
+    - nte
+    - National Talent Exam
+- intent: w1
+  examples: |
+    - w1
+    - willing question1
+- intent: w2
+  examples: |
+    - w2
+    - willing question2
+- intent: w3
+  examples: |
+    - w3
+    - willing question3
+- intent: w4
+  examples: |
+    - w4
+    - willing question4

@@ -1,0 +1,249 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- tell_name
+- my_name
+- mobile_number
+- user_edu_qual
+- state_of_student
+- ok_questions
+- pcmbtn
+- lifesciencebtn
+- artsbtn
+- history
+- physics
+- chemistry
+- maths
+- computer
+- computer1
+- language
+- lan1
+- lan2
+- lan3
+- lan4
+- lan5
+- comp1
+- comp2
+- comp3
+- comp4
+- comp5
+- phy1
+- phy2
+- phy3
+- phy4
+- phy5
+- chem1
+- chem2
+- chem3
+- chem4
+- chem5
+- bio1
+- bio2
+- bio3
+- bio4
+- bio5
+- math1
+- math2
+- math3
+- math4
+- math5
+- ask_question
+- phy
+- sport
+- oratory
+- easy
+- others
+- sciexhibition
+- olympiad
+- no
+- futurequestion1
+- w1
+- w2
+- w3
+- w4
+entities:
+- name
+- number
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_name:
+  - text: i am your career path identifier bot.
+  utter_my_name:
+  - text: what is your name?
+  utter_mobile_number:
+  - text: what is your number?
+  utter_thanks:
+  - text: thanks for providing the values.
+  utter_carrer_path:
+  - text: Have you chosen your career path?
+  utter_user_edu_qual:
+  - text: hi, what are you studying now?
+  utter_carrer_reply:
+  - text: ok I will help you to choose your career path by asking some questions.
+  utter_pathquestion:
+  - buttons:
+    - payload: /pcmbtn
+      title: pcm
+    - payload: /lifesciencebtn
+      title: pcb
+    - payload: /artsbtn
+      title: commerce
+    - payload: /history
+      title: history
+    text: choose ur stream
+  utter_pcmcl:
+  - buttons:
+    - payload: /physics
+      title: Physics
+    - payload: /chemistry
+      title: Chemistry
+    - payload: /maths
+      title: Maths
+    - payload: /computer
+      title: Computer
+    - payload: /language
+      title: language
+    text: What subject do you like most?
+  utter_subject:
+  - text: Choose your interest level in each of the subject
+  utter_lang:
+  - buttons:
+    - payload: /lan1
+      title: one
+    - payload: /lan2
+      title: two
+    - payload: /lan3
+      title: three
+    - payload: /lan4
+      title: four
+    - payload: /lan5
+      title: five
+    text: Language
+  utter_computer:
+  - buttons:
+    - payload: /comp1
+      title: one star
+    - payload: /comp2
+      title: two star
+    - payload: /comp3
+      title: three star
+    - payload: /comp4
+      title: four star
+    - payload: /comp5
+      title: five star
+    text: Computer
+  utter_physics:
+  - buttons:
+    - payload: /phy1
+      title: one star
+    - payload: /phy2
+      title: two star
+    - payload: /phy3
+      title: three star
+    - payload: /phy4
+      title: four star
+    - payload: /phy5
+      title: five star
+    text: Physics
+  utter_chemistry:
+  - buttons:
+    - payload: /chem1
+      title: one star
+    - payload: /chem2
+      title: two star
+    - payload: /chem3
+      title: three star
+    - payload: /chem4
+      title: four star
+    - payload: /chem5
+      title: five star
+    text: Chemistry
+  utter_biology:
+  - buttons:
+    - payload: /bio1
+      title: one star
+    - payload: /bio2
+      title: two star
+    - payload: /bio3
+      title: three star
+    - payload: /bio4
+      title: four star
+    - payload: /bio5
+      title: five star
+    text: Biology
+  utter_maths:
+  - buttons:
+    - payload: /math1
+      title: one star
+    - payload: /math2
+      title: two star
+    - payload: /math3
+      title: three star
+    - payload: /math4
+      title: four star
+    - payload: /math5
+      title: five star
+    text: Maths
+  utter_project_question:
+  - text: Have you done any projects in School? Yes, in which domain?
+  utter_extracurricular:
+  - buttons:
+    - payload: /sport
+      title: Sport
+    - payload: /oratory
+      title: Oratory
+    - payload: /easy
+      title: Easy
+    - payload: /sciexhibition
+      title: Science Exhibition
+    - payload: /others
+      title: Others
+    - payload: /no
+      title: No
+    text: What are your extracurricular activities?
+  utter_talentxam:
+  - buttons:
+    - payload: /olympiad
+      title: Olympiad
+    - payload: /nte
+      title: National Talent Exam
+    - payload: /others
+      title: Others
+    - payload: /no
+      title: No
+    text: Cleared any of the talent examinations?
+  utter_future_question:
+  - text: Imagine you are at your 25th Birthday party. You met your old school buddy John. Tell him what you do? eg I’m a Mathematician working at blabla. I did my Master at buhbuh. 
+  utter_willing_question:
+  - buttons:
+    - payload: /w1
+      title: Will act since, my friend is crying
+    - payload: /w2
+      title: No, I won’t I have fear of performing at Stage
+    - payload: /w3
+      title: Will act, as this is an opportunity.
+    - payload: /w4
+      title: will run away from the place, where I can’t see his place
+    text: Friend of yours is conducting a drama at school. The boy who needs to act as a Vegetable seller Was absent on the event day. Your friend is pleading to act for the role. Will you?
+  utter_profpath1:
+  - text: "you first preference is engineering  your second preference is medical"

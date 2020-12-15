@@ -1,0 +1,21 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 86250560ebf945d398b84c976d79866e
+  steps:
+  - intent: ok_questions
+  - action: utter_pathquestion
+  - intent: pcmbtn
+  - action: utter_pcmcl
+  - intent: physics
+  - action: utter_subject
+  - action: utter_lang
+  - intent: lan1
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot

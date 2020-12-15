@@ -1,0 +1,95 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: Happy name path
+  steps:
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_my_name
+  - intent: my_name
+    entities: 
+    - name: "preethi"
+  - action: utter_mobile_number
+  - intent: mobile_number
+    entities:
+    - number: 123456789
+  - action: utter_user_edu_qual
+  - intent: user_edu_qual
+  - action: utter_carrer_path
+  - intent: state_of_student
+  - action: utter_carrer_reply
+  - intent: ok_questions
+
+- story: main path
+  steps:
+  - intent: ok_questions
+  - action: utter_pathquestion
+  - intent: pcmbtn
+  - action: utter_pcmcl
+  - intent: physics
+  - action: utter_subject
+  - action: utter_lang
+  - intent: lan1
+
+- story: professional_course computer path
+  steps:
+  - intent: ask_question
+  - action: utter_pathquestion
+  - intent: pcmbtn
+  - action: utter_pcmcl
+  - intent: computer
+  - action: utter_lang
+  - intent: lan4
+  - action: utter_computer
+  - intent: comp4
+  - action: utter_physics
+  - intent: phy4
+  - action: utter_chemistry
+  - intent: chem4
+  - action: utter_biology
+  - intent: bio4
+  - action: utter_maths
+  - intent: math4
+- story: for check
+  steps:
+  - intent: math4
+  - action: utter_project_question
+  - intent: computer1
+  - action: utter_extracurricular
+  - intent: sciexhibition
+  - action: utter_talentxam
+  - intent: olympiad
+  - action: utter_future_question
+  - intent: futurequestion1
+  - action: utter_willing_question
+  - intent: w3
+  - action: utter_profpath1
+
