@@ -70,6 +70,16 @@ intents:
 - w3
 - w4
 - nte
+- engineering
+- medical
+- pc_be_civil
+- pc_be_mechanical
+- pc_be_electrical
+- pc_be_computer
+- pc_be_civil_master
+- no_need
+- computer1
+- professionalbtn
 entities:
 - name
 - number
@@ -251,4 +261,32 @@ responses:
       as a Vegetable seller Was absent on the event day. Your friend is pleading to
       act for the role. Will you?
   utter_profpath1:
-  - text: you first preference is engineering  your second preference is medical
+  - buttons:
+    - payload: /engineering
+      title: 1. Engineering
+    - payload: /medical
+      title: 2. Medical
+    text: your preferences are
+  utter_want_pc_be:
+  - buttons:
+    - payload: /pc_be_civil
+      title: Civil
+    - payload: /pc_be_mechanical
+      title: Mechanical
+    - payload: /pc_be_electrical
+      title: Electrical
+    - payload: /pc_be_computer
+      title: Information and communication
+    - payload: /no_need
+      title: No action
+    text: select your interested domain course
+  utter_pc_be_computer:
+  - text: "B.E Computer Science and Engineering\nB.Tech Information Technology\nB.E\
+      \ Biomedical Engineering"
+  utter_pc_medical_courses:
+  - text: "Bachelor of Medicine, Bachelor of Surgery – MBBS\nBachelor of Dental Surgery\
+      \ – BDS\nBachelor of Ayurvedic Medicine and Surgery – BAMS\nBachelor of Homeopathic\
+      \ Medicine and Surgery – BHMS\nBachelor of Unani Medicine and Surgery – BUMS\n\
+      Bachelor of Physiotherapy - B.Pth or BPT\nBachelor of Veterinary Science - B.VSc\n\
+      Bachelor of Naturopathy and Yoga – BNYS\nBachelor of Siddha Medicine and Surgery\
+      \ – BSMS"

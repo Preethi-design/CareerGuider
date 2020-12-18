@@ -85,10 +85,10 @@ nlu:
     - am I talking to a human?
 - intent: tell_name
   examples: |
-    - what is your name?
-    - tell me your name
-    - What others call you?
-    - what should i call you?
+    - Hi, what is your name?
+    - Hi, tell me your name
+    - Hi, What others call you?
+    - Hi, what should i call you?
 - intent: my_name
   examples: |
     - my name is [preethi](name)
@@ -107,6 +107,7 @@ nlu:
     - 12th grade completed.
     - 12th completed.
     - completed my schooling.
+    - 12th completed
 - intent: state_of_student
   examples: |
     - No, I am still in confusion to choose my career, can you help me out.
@@ -160,12 +161,15 @@ nlu:
   examples: |
     - computer science
     - cse group
-    - computer
-    
 - intent: computer
   examples: |
-    - cse
+    - computer
     - computer project
+    - yes i did project on android
+    - yes i did in machine learning
+- intent: computer1
+  examples: |
+    - cse
 - intent: language
   examples: |
     - language
@@ -376,3 +380,38 @@ nlu:
   examples: |
     - w4
     - willing question4
+- intent: engineering
+  examples: |
+    - engineering
+    - Engineering
+    - engi
+- intent: medical
+  examples: |
+    - medical
+    - medi
+    - medicine
+- intent: pc_be_civil
+  examples: |
+    - civil
+    - civil dept
+- intent: pc_be_mechanical
+  examples: |
+    - mechanical
+    - mech
+- intent: pc_be_electrical
+  examples: |
+    - electrical
+    - ece
+    - eee
+- intent: pc_be_computer
+  examples: |
+    - computer
+    - cse
+    - cs
+- intent: no_need
+  examples: |
+    - no need
+    - no action
+- intent: professionalbtn
+  examples: |
+    - professionalbtn
