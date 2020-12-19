@@ -1,17 +1,17 @@
 version: "2.0"
 stories:
-- story: Story from Conversation ID a3fb94a992ae4e8fbaa935c4ac0ad040
+- story: Story from Conversation ID dde3e13d3e18425b99f6a9f5c9b6a663
   steps:
   - intent: tell_name
   - action: utter_name
   - action: utter_my_name
+  - slot_was_set:
+    - name: Preethi
   - intent: my_name
     entities:
-    - name: preethi
+    - name: Preethi
   - action: utter_mobile_number
   - intent: mobile_number
-    entities:
-    - number: '123456789'
   - action: utter_user_edu_qual
   - intent: user_edu_qual
   - action: utter_carrer_path
@@ -48,7 +48,86 @@ stories:
   - intent: engineering
   - action: utter_want_pc_be
   - intent: pc_be_computer
+  - action: utter_pc_be_computer_display1
+  - intent: computer_engineering
   - action: utter_pc_be_computer
+  - action: utter_pc_be_computer_display2
+  - intent: computer_entrance_exam
+  - action: utter_computer_entrance_exam
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college
+  - intent: goodbye
+  - action: utter_goodbye
+- story: Story from Conversation ID 434b916c77f045aeab8391d2b809738b
+  steps:
+  - intent: tell_name
+  - action: utter_name
+  - action: utter_my_name
+  - slot_was_set:
+    - name: Preethi
+  - intent: my_name
+    entities:
+    - name: Preethi
+  - action: utter_mobile_number
+  - intent: mobile_number
+  - action: utter_user_edu_qual
+  - intent: user_edu_qual
+  - action: utter_carrer_path
+  - intent: state_of_student
+  - action: utter_carrer_reply
+  - intent: ok_questions
+  - action: utter_pathquestion
+  - intent: pcmbtn
+  - action: utter_pcmcl
+  - intent: computer_course
+  - action: utter_lang
+  - intent: lan4
+  - action: utter_computer
+  - intent: comp4
+  - action: utter_physics
+  - intent: phy4
+  - action: utter_chemistry
+  - intent: chem4
+  - action: utter_biology
+  - intent: bio4
+  - action: utter_maths
+  - intent: math4
+  - action: utter_project_question
+  - intent: computer
+  - action: utter_extracurricular
+  - intent: sciexhibition
+  - action: utter_talentxam
+  - intent: olympiad
+  - action: utter_future_question
+  - intent: futurequestion1
+  - action: utter_willing_question
+  - intent: w3
+  - action: utter_profpath1
+  - intent: engineering
+  - action: utter_want_pc_be
+  - intent: pc_be_computer
+  - action: utter_pc_be_computer_display1
+  - intent: computer_engineering
+  - action: utter_pc_be_computer
+  - action: utter_pc_be_computer_display2
+  - intent: computer_entrance_exam
+  - action: utter_computer_entrance_exam
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college
+- story: Story from Conversation ID d227ae4f74644f3583cbd49e42a77874
+  steps:
+  - action: utter_name
+  - action: utter_mobile_number
+  - slot_was_set:
+    - name: Preethi
+  - intent: tell_name
+  - action: utter_willing_question
+  - intent: futurequestion1
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college
 rules:
 - rule: Say goodbye anytime the user says goodbye
   steps:

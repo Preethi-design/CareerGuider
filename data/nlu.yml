@@ -28,6 +28,7 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    - thank you
 - intent: affirm
   examples: |
     - yes
@@ -95,10 +96,11 @@ nlu:
     - [preethi](name) is my name
     - [preethi](name) this side
     - people call me [preethi](name)
+    - My name is [Preethi](name)
 - intent: mobile_number
   examples: |
     - my number is [123456789](number)
-    - [123456789](number)
+    - 123456789
     - [123456789](number) is my number
     - my mobile number is [123456789](number)
 - intent: user_edu_qual
@@ -115,6 +117,7 @@ nlu:
     - no
     - not yet
     - confusion
+    - Not yet
 - intent: ok_questions
   examples: |
     - ok Start asking the questions
@@ -122,6 +125,8 @@ nlu:
     - proceed
     - start
     - ok
+    - Proceed
+    - Ok proceed
 - intent: ask_question
   examples: |
     - ask question
@@ -130,6 +135,7 @@ nlu:
   examples: |
     - physics chem maths
     - pcm
+    - /pcmbtn
 - intent: lifesciencebtn
   examples: |
     - life science
@@ -164,9 +170,10 @@ nlu:
 - intent: computer
   examples: |
     - computer
-    - computer project
+    - Yes i did computer science project
     - yes i did project on android
     - yes i did in machine learning
+    - i did computer science project
 - intent: computer1
   examples: |
     - cse
@@ -220,6 +227,7 @@ nlu:
     - comp4
     - computer4
     - 4 star
+    - /comp4
 - intent: comp5
   examples: |
     - comp5
@@ -270,6 +278,7 @@ nlu:
     - chem4
     - chemistry4
     - 4 star
+    - /chem4
 - intent: chem5
   examples: |
     - chem5
@@ -353,9 +362,9 @@ nlu:
     - other
 - intent: futurequestion1
   examples: |
-    - computer engineer
-    - software engineer
-    - hardware engineer
+    - i am a computer engineer
+    - i am a software engineer
+    - i am a hardware engineer
 - intent: olympiad
   examples: |
     - olympiad
@@ -415,3 +424,20 @@ nlu:
 - intent: professionalbtn
   examples: |
     - professionalbtn
+- intent: computer_engineering
+  examples: |
+    - computer_engineering
+    - the courses of computer engineering
+    - engineering courses
+    - computer engineering
+- intent: computer_entrance_exam
+  examples: |
+    - computer_entrance_exam
+    - entrance exam for computer engineer
+    - computer entrace exam
+    - computer entrance exam
+- intent: pc_be_computer_college
+  examples: |
+    - pc_be_computer_college
+    - college for computer engineering
+    - cse college

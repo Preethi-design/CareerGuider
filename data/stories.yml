@@ -96,7 +96,15 @@ stories:
   - intent: engineering
   - action: utter_want_pc_be
   - intent: pc_be_computer
+  - action: utter_pc_be_computer_display1
+  - intent: computer_engineering
   - action: utter_pc_be_computer
+  - action: utter_pc_be_computer_display2
+  - intent: computer_entrance_exam
+  - action: utter_computer_entrance_exam
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college
 
 - story: professional_course computer path
   steps:
@@ -147,4 +155,28 @@ stories:
   - action: utter_willing_question
   - intent: w3
   - action: utter_profpath1
+  - intent: engineering
+  - action: utter_want_pc_be
+  - intent: pc_be_computer
+  - action: utter_pc_be_computer_display1
+  - intent: computer_engineering
+  - action: utter_pc_be_computer
+  - action: utter_pc_be_computer_display2
+  - intent: computer_entrance_exam
+  - action: utter_computer_entrance_exam
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college
 
+- story: last path
+  steps:
+  - intent: pc_be_computer
+  - action: utter_pc_be_computer_display1
+  - intent: computer_engineering
+  - action: utter_pc_be_computer
+  - action: utter_pc_be_computer_display2
+  - intent: computer_entrance_exam
+  - action: utter_computer_entrance_exam
+  - action: utter_pc_be_computer_display3
+  - intent: pc_be_computer_college
+  - action: utter_pc_be_computer_college

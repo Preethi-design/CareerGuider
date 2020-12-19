@@ -80,12 +80,16 @@ intents:
 - no_need
 - computer1
 - professionalbtn
+- computer_engineering
+- computer_entrance_exam
+- pc_be_computer_college
 entities:
 - name
 - number
 slots:
   name:
     type: text
+    influence_conversation: true
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -101,17 +105,17 @@ responses:
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
   utter_name:
-  - text: i am your career path identifier bot.
+  - text: hello,i am your career path identifier bot.
   utter_my_name:
   - text: what is your name?
   utter_mobile_number:
-  - text: what is your number?
+  - text: can you give me your number? to send any important information.
   utter_thanks:
   - text: thanks for providing the values.
   utter_carrer_path:
   - text: Have you chosen your career path?
   utter_user_edu_qual:
-  - text: hi {name} , what are you studying now?
+  - text: Hi {name} , what are you studying now?
   utter_carrer_reply:
   - text: ok I will help you to choose your career path by asking some questions.
   utter_pathquestion:
@@ -293,3 +297,42 @@ responses:
       Bachelor of Physiotherapy - B.Pth or BPT\nBachelor of Veterinary Science - B.VSc\n\
       Bachelor of Naturopathy and Yoga – BNYS\nBachelor of Siddha Medicine and Surgery\
       \ – BSMS"
+  utter_pc_be_computer_display1:
+  - buttons:
+    - payload: /computer_engineering
+      title: Computer Engineering course
+    - payload: /computer_entrance_exam
+      title: Entrance Exam Details
+    - payload: /pc_be_computer_college
+      title: top 10 Computer Engineering College
+    text: Select what you want
+  utter_computer_entrance_exam:
+  - text: " JEE Main Exam\n JEE Main & Advanced Exams\n Tamil Nadu Engineering Admissions\
+      \ (TNEA)\n All India Engineering Entrance Exams (AIEEE)\n Vellore Institute\
+      \ of Technology Engineering Entrance Exam (VITEEE)\n SRM Joint Engineering Entrance\
+      \ Exam\n The Amrita Engineering Entrance Examination"
+  utter_pc_be_computer_college:
+  - text: "Indian Institute of Technology Madras\n National Institute of Technology\
+      \ Tiruchirappalli\n Anna University, Chennai\n Vellore Institute of Technology,\
+      \ Vellore\n Amrita Vishwa Vidyapeetham, Coimbatore\n SRM ENGINEERING COLLEGE,\
+      \ KANCHIPURAM\n SSN COLLEGE OF ENGINEERING - [SSNCE], CHENNAI\n P.S.G COLLEGE\
+      \ OF TECHNOLOGY - [PSGCT], COIMBATORE\n SASTRA UNIVERSITY, THANJAVUR\n SATHYABAMA\
+      \ INSTITUTE OF SCIENCE AND TECHNOLOGY, CHENNAI"
+  utter_pc_be_computer_display2:
+  - buttons:
+    - payload: /computer_engineering
+      title: Computer Engineering course
+    - payload: /computer_entrance_exam
+      title: Entrance Exam Details
+    - payload: /pc_be_computer_college
+      title: top 10 Computer Engineering College
+    text: Select what you want
+  utter_pc_be_computer_display3:
+  - buttons:
+    - payload: /computer_engineering
+      title: Computer Engineering course
+    - payload: /computer_entrance_exam
+      title: Entrance Exam Details
+    - payload: /pc_be_computer_college
+      title: top 10 Computer Engineering College
+    text: Select what you want
