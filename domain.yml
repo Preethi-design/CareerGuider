@@ -83,9 +83,9 @@ intents:
 entities:
 - name
 - number
-# slots:
-#   name:
-#     type: text
+slots:
+  name:
+    type: text
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -111,7 +111,7 @@ responses:
   utter_carrer_path:
   - text: Have you chosen your career path?
   utter_user_edu_qual:
-  - text: hi , what are you studying now?
+  - text: hi {name} , what are you studying now?
   utter_carrer_reply:
   - text: ok I will help you to choose your career path by asking some questions.
   utter_pathquestion:
